@@ -1,0 +1,125 @@
+:root {
+  --flex: flex;
+  --color-aqua: aqua;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: antiquewhite;
+}
+
+.heading {
+  display: var(--flex);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10px;
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.containers {
+  display: var(--flex);
+}
+
+.queue-containers {
+  flex-direction: column;
+}
+
+.button-container {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.buttons {
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: var(--color-aqua);
+  border: solid 2px darkblue;
+  transition: all ease 1s;
+}
+
+.buttons:hover {
+  border: solid 2px var(--color-aqua);
+}
+
+.queue-titles-container {
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+.queue-titles {
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.display-queues {
+  background-color: var(--color-aqua);
+  height: 84vh;
+  width: 32vw;
+  border: solid 2px darkblue;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: darkblue;
+}
+
+.faqs-link {
+  display: flex;
+  margin: 5px 0 0 15px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/*FAQS PAGE STYLES*/
+
+.faqs-container {
+  display: var(--flex);
+  border: 2px solid darkblue;
+  width: 90vw;
+  height: 80vh;
+  margin: 50px auto 0;
+  text-align: center;
+  color: darkblue;
+  letter-spacing: 1px;
+}
+
+.faqs-list-container {
+  display: var(--flex);
+  flex-direction: column;
+  list-style: none;
+  background-color: var(--color-aqua);
+}
+
+.faqs-list-inner-containers {
+  margin-top: 40px;
+  background-color: var(--color-aqua);
+}
+
+.faqs-list-titles {
+  background-color: var(--color-aqua);
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.faqs-list-items {
+  font-size: 25px;
+  margin-top: 10px;
+  background-color: var(--color-aqua);
+}
+
+.home-link {
+  display: var(--flex);
+  margin: 5px 0 0 95px;
+  font-size: 20px;
+  text-decoration: none;
+}

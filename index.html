@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Customer Queue System</title>
+  </head>
+
+  <body>
+    <h1 class="heading">Company Name</h1>
+    <section class="button-container containers">
+      <button type="button" class="add-customers-button buttons">
+        Click to Add Customer
+      </button>
+      <button type="button" class="next-customers-button buttons">
+        Click to Call Next Customer in Current Queue
+      </button>
+      <button type="button" class="clear-current-customers-button buttons">
+        Click to Clear Current Queue
+      </button>
+      <button type="button" class="cycle-recovered-customers-button buttons">
+        Click to Call Next Customer in Recovery Queue
+      </button>
+      <button type="button" class="clear-recovered-customers-button buttons">
+        Click to Clear Recovery Queue
+      </button>
+    </section>
+
+    <section class="queue-titles-container containers">
+      <div class="current-queue-container containers queue-containers">
+        <h1 class="current-queue queue-titles">Current Queue</h1>
+        <div class="display-customers display-queues"></div>
+      </div>
+
+      <div class="recovery-queue-container containers queue-containers">
+        <h1 class="recovery-queue queue-titles">Recovery Queue</h1>
+        <div class="display-old-customers display-queues"></div>
+      </div>
+
+      <div class="reference-queue-container containers queue-containers">
+        <h1 class="reference-queue queue-titles">Reference Queue</h1>
+        <div class="display-all-customers display-queues"></div>
+      </div>
+    </section>
+
+    <a href="faqs.html" class="faqs-link">Start here (FAQs)</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
